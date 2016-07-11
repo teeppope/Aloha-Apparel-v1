@@ -16,7 +16,7 @@
 @font-face {
     font-family: 'Playfair Display';
     src: url('assets/fonts/playfairdisplay/playfairdisplay-bolditalic-webfont.eot');
-    src: url('assets/fonts/playfairdisplay/playfairdisp lay-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+    src: url('assets/fonts/playfairdisplay/playfairdisplay-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
          url('assets/fonts/playfairdisplay/playfairdisplay-bolditalic-webfont.woff2') format('woff2'),
          url('assets/fonts/playfairdisplay/playfairdisplay-bolditalic-webfont.woff') format('woff'),
          url('assets/fonts/playfairdisplay/playfairdisplay-bolditalic-webfont.ttf') format('truetype'),
@@ -158,6 +158,7 @@ i {
 /************************* LAYOUT ***********************/
 .container{
     margin: 0 auto;
+    max-width: 500px;
 }
 
 
@@ -316,13 +317,6 @@ input[placeholder="Your Email"],
     padding-left: 4rem;
     padding-right: 4rem;
 }
-.ftr-txt{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-between;
-    align-content: center;
-
-}
 .ftr-txt p{
     font-family: Playfair Display, serif;
     font-size:1.2rem;
@@ -331,6 +325,7 @@ input[placeholder="Your Email"],
 }
 .cpywrt,
 .contact{
+    height: 100%;
     margin-bottom: 2rem;
 }
 .contact a{
@@ -377,15 +372,12 @@ input[placeholder="Your Email"],
         width: 50%;
     }
 
-/* FOOTER styles*/   
-.ftr-txt{
-    flex-direction: row;
-    justify-content: space-between;
-} 
+/* FOOTER styles*/    
 .lft-ftr{
-    min-width: 300px;
+    float: left;
 }
 .rgt-ftr{
+    float: right;
     text-align: left;
     margin-top: 0;
 }
